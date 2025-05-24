@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <video id="vid" class="bg-video" muted>
+            <source src="footage\alt.mp4" type="video/mp4" >
+        </video>
+        <video id="vid" class="bg-video" muted>
+            <source src="footage/mountains.mp4" type="video/mp4" >
+        </video>
+        <video id="vid" class="bg-video" muted>
+            <source src="footage/109 vsc.mp4" type="video/mp4" >
+        </video>
+        <video id="vid" class="bg-video" muted>
+            <source src="footage/Join Us Less Effects.mp4" type="video/mp4" >
+        </video>
+        <video id="vid" class="bg-video" muted>
+            <source src="footage/No Worries Just Vid.mp4" type="video/mp4" >
+        </video>
+        <div id="overlay"></div>
+    </header>
+    <div class="card">
+        <div id="art">
+            <img id="artwork" src="gifs\ocean at night.gif" alt="cover">
+        </div>
+        <div id="icons">
+        <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+        <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+        <button id="share"><i class="fa-solid fa-share"></i></button>
+        </div>
+        <audio id="audioPlayer"></audio>
+        <div id="info">
+        <p id="song">Song</p>
+        <p id="artist">Artist</p>
+        <p id="album">Album</p>
+        </div>
+        <div id="time-display" class="time-display">
+            <span id="currentTime">0:00</span>
+        <div id="progress-container">
+            <div id="progress"></div>
+        </div>
+        <span id="duration">0:00</span>
+        </div>
+        <div id="controls">
+            <button id="rewind"><i class="fa-solid fa-backward-fast"></i></button>
+            <button id="play"><i class="fa-solid fa-play fa-fw"></i></button>
+            <button id="forward"><i class="fa-solid fa-forward-fast"></i></button>
+        </div>
+        <div id="toast">Copied to clipboard!</div>
+        <div id="rall">You are now repeating the playlist.<br> 
+            Click again to only repeat the song.
+        </div>
+        <div id="rone">You are now repeating this song only.<br> 
+            Click again to turn off.
+        </div>
+        <div id="roff">Repeat is now off</div>
+        <div id="shufflem">You are now shuffling</div>
+        <div id="shuffleoff">You are no longer shuffling</div>
+    </div>
+    <div class="fader-wrapper">
+        <div class="fader">
+        <div id="fade"></div>
+        <div id="fade2"></div>
+        <div id="knob"></div>
+        
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
